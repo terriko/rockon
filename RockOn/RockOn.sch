@@ -26,26 +26,6 @@ F 3 "" H 3850 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Linear-Amplifiers-Audio:MAX4466EXK_T Mic1
-U 1 1 5E362ACD
-P 2300 3350
-F 0 "Mic1" H 2644 3403 60  0000 L CNN
-F 1 "MAX4466EXK_T" H 2644 3297 60  0000 L CNN
-F 2 "digikey-footprints:SOT-353" H 2500 3550 60  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf" H 2500 3650 60  0001 L CNN
-F 4 "MAX4466EXK+CT-ND" H 2500 3750 60  0001 L CNN "Digi-Key_PN"
-F 5 "MAX4466EXK+T" H 2500 3850 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 2500 3950 60  0001 L CNN "Category"
-F 7 "Linear - Amplifiers - Audio" H 2500 4050 60  0001 L CNN "Family"
-F 8 "https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf" H 2500 4150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/maxim-integrated/MAX4466EXK-T/MAX4466EXK-CT-ND/5405773" H 2500 4250 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC PREAMP AUDIO MONO AB SC70-5" H 2500 4350 60  0001 L CNN "Description"
-F 11 "Maxim Integrated" H 2500 4450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2500 4550 60  0001 L CNN "Status"
-	1    2300 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED red_led2
 U 1 1 5E364674
 P 6200 2300
@@ -78,10 +58,6 @@ F 3 "~" H 6200 3300 50  0001 C CNN
 	1    6200 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 3350 3100 3350
-Wire Wire Line
-	3100 3350 3100 3700
 $Comp
 L Device:LED red_led1
 U 1 1 5E364292
@@ -221,18 +197,33 @@ NoConn ~ 4600 4300
 NoConn ~ 4600 4100
 NoConn ~ 4600 4000
 NoConn ~ 4600 3700
+$Comp
+L Connector:Conn_01x03_Male Max4466
+U 1 1 5E383425
+P 3350 2950
+F 0 "Max4466" H 3458 3231 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3458 3140 50  0000 C CNN
+F 2 "" H 3350 2950 50  0001 C CNN
+F 3 "~" H 3350 2950 50  0001 C CNN
+	1    3350 2950
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	3100 4600 2300 4600
+	3100 3700 2800 3700
 Wire Wire Line
-	2300 4600 2300 3550
+	2800 3700 2800 3050
 Wire Wire Line
-	3100 4700 1850 4700
+	2800 3050 3150 3050
 Wire Wire Line
-	1850 4700 1850 3100
+	3100 4600 2700 4600
 Wire Wire Line
-	1850 3100 2300 3100
+	2700 4600 2700 2950
 Wire Wire Line
-	2300 3100 2300 3150
-NoConn ~ 2000 3250
-NoConn ~ 2000 3450
+	2700 2950 3150 2950
+Wire Wire Line
+	3100 4700 2600 4700
+Wire Wire Line
+	2600 4700 2600 2850
+Wire Wire Line
+	2600 2850 3150 2850
 $EndSCHEMATC

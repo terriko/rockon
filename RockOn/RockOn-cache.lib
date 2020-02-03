@@ -1,6 +1,29 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Conn_01x03_Male
+#
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Battery
 #
 DEF Device_Battery BT 0 0 N N 1 F N
@@ -46,35 +69,6 @@ P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Linear-Amplifiers-Audio_MAX4466EXK_T
-#
-DEF dk_Linear-Amplifiers-Audio_MAX4466EXK_T U 0 0 Y Y 1 F N
-F0 "U" -200 300 60 H V C CNN
-F1 "dk_Linear-Amplifiers-Audio_MAX4466EXK_T" 100 -200 60 H V L CNN
-F2 "digikey-footprints:SOT-353" 200 200 60 H I L CNN
-F3 "https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf" 200 300 60 H I L CNN
-F4 "MAX4466EXK+CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "MAX4466EXK+T" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Linear - Amplifiers - Audio" 200 700 60 H I L CNN "Family"
-F8 "https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/maxim-integrated/MAX4466EXK-T/MAX4466EXK-CT-ND/5405773" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC PREAMP AUDIO MONO AB SC70-5" 200 1000 60 H I L CNN "Description"
-F11 "Maxim Integrated" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-P 2 0 1 0 -150 -100 -100 -100 N
-P 2 0 1 0 -150 100 -100 100 N
-P 2 0 1 0 -125 -75 -125 -125 N
-P 4 0 1 0 -200 200 -200 -200 200 0 -200 200 f
-X ~ 1 -300 -100 100 R 50 50 1 1 I
-X GND 2 0 -200 100 U 50 50 1 1 W
-X ~ 3 -300 100 100 R 50 50 1 1 I
-X ~ 4 300 0 100 L 50 50 1 1 O
-X VCC 5 0 200 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
