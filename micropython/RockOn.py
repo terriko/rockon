@@ -26,6 +26,7 @@ def sample_audio(samples):
 def mean(values):
     return sum(values) / len(values)
 
+# from https://learn.adafruit.com/adafruit-circuit-playground-express/playground-sound-meter
 def normalized_rms(values):
     minbuf = int(mean(values))
     samples_sum = sum(

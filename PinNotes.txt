@@ -1,0 +1,18 @@
+d0 - pin 16 - connected to red board led
+d1 - pin 5 - red1
+d2 - pin 4 - yellow1
+d3 - pin 0 - no response
+d4 - pin 2 - connected to blue board led (onboard: no response?)
+d5 - pin 14 - green1
+d6 - pin 12 - red2
+d7 - pin 13 - yellow2
+d8 - pin 15 - green2
+sd3 - pin 10 - ok
+
+
+pin 6 - invalid
+pin 7 - invalid
+8 - invalid
+9 - board reboot
+
+

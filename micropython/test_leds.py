@@ -14,3 +14,7 @@ for led in led_list:
     time.sleep(0.5)
     led.on()
 
+i = 4
+led = machine.Pin(i, machine.Pin.OUT)
+led.off()
+
